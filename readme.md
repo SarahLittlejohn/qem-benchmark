@@ -10,7 +10,7 @@
 - [x] Noiseless test for GHZ (`tests/test_circuits.py`)
 
 ### 10–11 Oct: Baseline on a noisy simulator
-- [ ] Baseline technique with no mitigation (`mitigation/none.py`)
+- [x] Baseline technique with no mitigation (`mitigation/none.py`)
 - [ ] Runner and results saving (`runner.py`, `results.py`)
 - [ ] First chart: raw GHZ value against number of qubits
 - [ ] Mirror circuit module and test
