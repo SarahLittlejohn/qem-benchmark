@@ -6,8 +6,8 @@
 - [x] IBM Quantum account and saved credentials
 
 ### 4 Oct: GHZ circuit
-- [ ] GHZ circuit module (`circuits/ghz.py`)
-- [ ] Noiseless test for GHZ (`tests/test_circuits.py`)
+- [x] GHZ circuit module (`circuits/ghz.py`)
+- [x] Noiseless test for GHZ (`tests/test_circuits.py`)
 
 ### 10–11 Oct: Baseline on a noisy simulator
 - [ ] Baseline technique with no mitigation (`mitigation/none.py`)
