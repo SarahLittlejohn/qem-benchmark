@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qem-bench"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "qiskit", "qiskit-ibm-runtime", "qiskit-aer",
+    "mitiq", "mthree", "pyyaml", "pandas", "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyter"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

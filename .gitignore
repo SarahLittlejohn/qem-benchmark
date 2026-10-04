@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Python build and cache files
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Testing
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# macOS
+.DS_Store
+
+# One-off scripts
+check.py
