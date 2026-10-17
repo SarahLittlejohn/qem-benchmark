@@ -11,9 +11,9 @@
 
 ### 10–11 Oct: Baseline on a noisy simulator
 - [x] Baseline technique with no mitigation (`mitigation/none.py`)
-- [ ] Runner and results saving (`runner.py`, `results.py`)
-- [ ] First chart: raw GHZ value against number of qubits
-- [ ] Mirror circuit module and test
+- [x] Runner and results saving (`runner.py`, `results.py`)
+- [x] First chart: raw GHZ value against number of qubits
+- [] Mirror circuit module and test
 
 ### 17–18 Oct: Mitigation techniques
 - [ ] Ising circuit module and test

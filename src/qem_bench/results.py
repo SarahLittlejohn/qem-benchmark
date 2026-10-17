@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 
 # The directory where all result CSV files will be stored
-RESULTS_DIR = Path("results")
+RESULTS_DIR = Path(__file__).resolve().parents[2] / "results"
 
 # Takes a list of dictionaries (one per run) and a name for the file, and returns the path it saved to.
 def save(rows: list[dict], name: str) -> Path:
