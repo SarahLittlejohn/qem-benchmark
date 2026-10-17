@@ -10,6 +10,7 @@ dist/
 
 # Testing
 .pytest_cache/
+results/scratch_*
 
 # Jupyter
 .ipynb_checkpoints/
