@@ -13,7 +13,7 @@
 - [x] Baseline technique with no mitigation (`mitigation/none.py`)
 - [x] Runner and results saving (`runner.py`, `results.py`)
 - [x] First chart: raw GHZ value against number of qubits
-- [] Mirror circuit module and test
+- [x] Mirror circuit module and test
 
 ### 17–18 Oct: Mitigation techniques
 - [ ] Ising circuit module and test
