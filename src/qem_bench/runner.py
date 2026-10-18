@@ -57,7 +57,7 @@ def run_experiment(name, circuit, techniques, sizes, depths=(0,), backend_name="
 
 
 if __name__ == "__main__":
-    path = run_experiment("ghz_baseline", circuit="ghz", techniques=["none"], sizes=[2, 4, 6, 8, 10, 12])
+    path = run_experiment("ghz_readout", circuit="ghz", techniques=["none", "readout"], sizes=[2, 4, 6, 8, 10, 12])
     print(f"Saved to {path}")
 # This block only runs when you execute the file directly (python -m qem_bench.runner), 
 # not when another file imports it. It's the standard way to give a module a "run me" entry point.
