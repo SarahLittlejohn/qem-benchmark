@@ -17,7 +17,7 @@
 
 ### 17–18 Oct: Mitigation techniques
 - [x] Ising circuit module and test
-- [ ] Readout error mitigation (mthree)
+- [x] Readout error mitigation (mthree)
 - [ ] Zero-noise extrapolation (Mitiq)
 - [ ] Dynamical decoupling
 - [ ] YAML configs for experiments
