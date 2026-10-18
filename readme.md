@@ -16,7 +16,7 @@
 - [x] Mirror circuit module and test
 
 ### 17–18 Oct: Mitigation techniques
-- [ ] Ising circuit module and test
+- [x] Ising circuit module and test
 - [ ] Readout error mitigation (mthree)
 - [ ] Zero-noise extrapolation (Mitiq)
 - [ ] Dynamical decoupling

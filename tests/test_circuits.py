@@ -3,7 +3,7 @@
 import pytest
 from qiskit.primitives import StatevectorEstimator
 
-from qem_bench.circuits import ghz, mirror
+from qem_bench.circuits import ghz, ising, mirror
 
 
 # --- GHZ ---
@@ -41,3 +41,29 @@ def test_mirror_different_seeds_give_different_circuits():
 def test_mirror_rejects_bad_input(n, depth):
     with pytest.raises(ValueError):
         mirror.build(n, depth)
+
+
+# --- Ising ---
+
+@pytest.mark.parametrize("n, depth", [(2, 1), (4, 2), (6, 4)])
+def test_ising_ideal_matches_estimator(n, depth):
+    qc, observable, ideal = ising.build(n, depth)
+    result = StatevectorEstimator().run([(qc, observable)]).result()
+    assert float(result[0].data.evs) == pytest.approx(ideal)
+
+
+def test_ising_with_no_kick_stays_at_one():
+    # With theta = 0, the RZZ gates only add phases, so every qubit stays in |0>
+    _, _, ideal = ising.build(4, 3, theta=0)
+    assert ideal == pytest.approx(1.0)
+
+
+def test_ising_ideal_is_non_trivial():
+    _, _, ideal = ising.build(4, 2)
+    assert -1 < ideal < 1
+
+
+@pytest.mark.parametrize("n, depth", [(1, 1), (3, 0), (21, 1)])
+def test_ising_rejects_bad_input(n, depth):
+    with pytest.raises(ValueError):
+        ising.build(n, depth)
